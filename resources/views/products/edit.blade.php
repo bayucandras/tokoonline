@@ -1,6 +1,6 @@
 <h1>{{ $subjudul }}</h1>
 
-<form action="/product/{{ $product->id }}" method="POST">
+<form action="/products/{{ $product->id }}" method="POST">
     @method('PUT')
     @csrf
     Name        :<input type="text" name="name" value="{{ $product->name }}"><br>

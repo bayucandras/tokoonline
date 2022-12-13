@@ -1,6 +1,6 @@
 <h1><?php echo e($subjudul); ?></h1>
 
-<form action="/product/<?php echo e($product->id); ?>" method="POST">
+<form action="/products/<?php echo e($product->id); ?>" method="POST">
     <?php echo method_field('PUT'); ?>
     <?php echo csrf_field(); ?>
     Name        :<input type="text" name="name" value="<?php echo e($product->name); ?>"><br>
